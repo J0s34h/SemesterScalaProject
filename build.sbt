@@ -1,7 +1,7 @@
-organization := "io.github.pauljamescleary"
-name := "scala-pet-store"
+organization := "com.yusuf.fayzullin"
+name := "ScalaSemesterProject"
 version := "0.0.1-SNAPSHOT"
-crossScalaVersions := Seq("2.12.15", "2.13.6")
+scalaVersion := "2.12.15"
 
 resolvers += Resolver.sonatypeRepo("snapshots")
 
@@ -61,17 +61,6 @@ addCompilerPlugin(
 )
 
 enablePlugins(ScalafmtPlugin, JavaAppPackaging, GhpagesPlugin, MicrositesPlugin, MdocPlugin)
-
-// Microsite settings
-micrositeGithubOwner := "pauljamescleary"
-
-micrositeGithubRepo := "scala-pet-store"
-
-micrositeName := "Scala Pet Store"
-
-micrositeDescription := "An example application using FP techniques in Scala"
-
-micrositeBaseUrl := "scala-pet-store"
 
 // Note: This fixes error with sbt run not loading config properly
 fork in run := true

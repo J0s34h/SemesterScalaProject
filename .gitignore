@@ -1,5 +1,15 @@
-/project/
-/.bsp/
-/.idea/
-/target/
+*.class
+*.log
+.idea
+target
+project/target
+.virtualenv
+__pycache__
+*.pyc
+.bloop
+.metals
+.vscode
+project/.metals
+project/metals.sbt
+.bsp
 

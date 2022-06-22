@@ -54,15 +54,14 @@ libraryDependencies ++= Seq(
   "io.github.jmcardon" %% "tsec-http4s" % TsecVersion,
 )
 
+
+
 dependencyOverrides += "org.slf4j" % "slf4j-api" % Slf4jVersion
 
 addCompilerPlugin(
   ("org.typelevel" %% "kind-projector" % KindProjectorVersion).cross(CrossVersion.full),
 )
 
-enablePlugins(ScalafmtPlugin, JavaAppPackaging, GhpagesPlugin, MicrositesPlugin, MdocPlugin)
+enablePlugins(ScalafmtPlugin, JavaAppPackaging, GhpagesPlugin, MicrositesPlugin, MdocPlugin, DockerPlugin)
 
-// Note: This fixes error with sbt run not loading config properly
-fork in run := true
-
-dockerExposedPorts ++= Seq(8080)
+enablePlugins(DockerPlugin)

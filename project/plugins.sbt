@@ -16,3 +16,8 @@ addSbtPlugin("com.typesafe.sbt" % "sbt-ghpages" % "0.6.3")
 
 // Easily manage scalac settings across scala versions with this:
 addSbtPlugin("io.github.davidgregory084" % "sbt-tpolecat" % "0.1.19")
+
+
+addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.8.1")
+
+addSbtPlugin("org.foundweekends.giter8" % "sbt-giter8-scaffold" % "0.11.0")
